@@ -14,12 +14,12 @@ binomial stochastic tree. A classic no-arbitrage assumption can bound the
 price of an option in terms of its underlying asset, but the fair option
 price is furthermore a function of the distribution of returns earned by
 the underlying asset. Therefore, a unique option price can be predicted by
-modeling a complete market vis-a-vis the underlying asset's risk.
+modeling a complete market vis-à-vis the underlying asset's risk.
 
 There are several option pricing models on Wall Street but OptionSim uses
 a simple binomial tree which can accurately compute the price of a complex
 option. The underlying assumption is that the price of an asset can be
-approximated as one of two states - proportionally up and proportionally down -
+approximated as one of two states - proportionally up or proportionally down -
 per period. Given a long enough traversal period along a stochastic process
 modeling this pattern of price changes, CRReurocall allows OptionSim to
 price a simple European style option written on a non-dividend paying stock.
