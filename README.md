@@ -1,5 +1,5 @@
 # CRReurocall
-## An OptionSim package
+## An OptionSim quant package
 
 Black Scholes Approximation of European Call Option Price by CRR
 
