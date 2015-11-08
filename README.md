@@ -1,11 +1,12 @@
 # CRReurocall
-# An OptionSim package
+## An OptionSim package
 
 Black Scholes Approximation of European Call Option Price by CRR
 
 qynvi
 
 02/24/2010 - Updated comments
+
 02/22/2010 - Initial revision
 
 Prices a European call option by modeling the price of the asset as a
@@ -29,12 +30,15 @@ n=5000 outputs converge to the Black Scholes Formula up to 6 sigfigs.
 
 Iterates for the price of a European call option by using the Cox,
 Ross, and Rubinstein model based on the following inputs:
-r - annual interest rate
-sigma - sigma
-K - K price
-S(0) - current T=0 price of the S
-T - time to maturity in years
-n - number of iterations
 
-Todo:
-- Mathmatical proof that Cox-Ross_Rubinstein converges to Black-Scholes-Merton
+r - annual interest rate
+
+sigma - sigma
+
+K - K price
+
+S(0) - current T=0 price of the S
+
+T - time to maturity in years
+
+n - number of iterations
