@@ -19,10 +19,53 @@
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h3>
+      <h1>
+<a id="crreurocall" class="anchor" href="#crreurocall" aria-hidden="true"><span class="octicon octicon-link"></span></a>CRReurocall</h1>
 
-<p>CRReurocall is a quant package for OptionSim.</p>
+<h2>
+<a id="an-optionsim-quant-package" class="anchor" href="#an-optionsim-quant-package" aria-hidden="true"><span class="octicon octicon-link"></span></a>An OptionSim quant package</h2>
+
+<p>Black Scholes Approximation of European Call Option Price by CRR</p>
+
+<p>qynvi</p>
+
+<p>02/24/2010 - Updated comments</p>
+
+<p>02/22/2010 - Initial revision</p>
+
+<p>Prices a European call option by modeling the price of the asset as a
+binomial stochastic tree. A classic no-arbitrage assumption can bound the
+price of an option in terms of its underlying asset, but the fair option
+price is furthermore a function of the distribution of returns earned by
+the underlying asset. Therefore, a unique option price can be predicted by
+modeling a complete market vis-à-vis the underlying asset's risk.</p>
+
+<p>There are several option pricing models on Wall Street but OptionSim uses
+a simple binomial tree which can accurately compute the price of a complex
+option. The underlying assumption is that the price of an asset can be
+approximated as one of two states - proportionally up or proportionally down -
+per period. Given a long enough traversal period along a stochastic process
+modeling this pattern of price changes, CRReurocall allows OptionSim to
+price a simple European style option written on a non-dividend paying stock.</p>
+
+<p>When the model is run under test vector with K=0, we expect output ~S(0).
+The CRR model converges to Black Scholes dependent on n. For example, with
+n=5000 outputs converge to the Black Scholes Formula up to 6 sigfigs.</p>
+
+<p>Iterates for the price of a European call option by using the Cox,
+Ross, and Rubinstein model based on the following inputs:</p>
+
+<p>r - annual interest rate</p>
+
+<p>sigma - sigma</p>
+
+<p>K - K price</p>
+
+<p>S(0) - current T=0 price of the S</p>
+
+<p>T - time to maturity in years</p>
+
+<p>n - number of iterations</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/qynvi/CRReurocall">Crreurocall</a> is maintained by <a href="https://github.com/qynvi">qynvi</a>.</span>
