@@ -26,19 +26,4 @@ price a simple European style option written on a non-dividend paying stock.
 
 When the model is run under test vector with K=0, we expect output ~S(0).
 The CRR model converges to Black Scholes dependent on n. For example, with
-n=5000 outputs converge to the Black Scholes Formula up to 6 sigfigs.
-
-Iterates for the price of a European call option by using the Cox,
-Ross, and Rubinstein model based on the following inputs:
-
-r - annual interest rate
-
-sigma - sigma
-
-K - K price
-
-S(0) - current T=0 price of the S
-
-T - time to maturity in years
-
-n - number of iterations
+n=5000 outputs converge to Black Scholes up to 6 sigfigs.
