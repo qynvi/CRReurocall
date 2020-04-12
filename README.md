@@ -1,11 +1,6 @@
 # CRReurocall
 ## An OptionSim quant package
 
-
-Note: Does not include OptionSim testbench, but a main function is provided to
-demo the plugin's original purpose.
-
-
 Black Scholes Approximation of European Call Option Price by CRR
 
 qynvi
